@@ -10,7 +10,7 @@
 int main(void)
 {
 	int n;
-	int b;
+	int b = 0;
 	b = n % 10;
 
 	srand(time(0));
