@@ -10,11 +10,11 @@ int main(void)
 	char alphA;
 	char alpha;
 
-	if (alpha = 'a'; alpha <= 'z'; alpha++)
+	if ((alpha = 'a'); alpha <= 'z'; alpha++)
 	{
 		putchar(alpha);
 	}
-	if (alphA = 'A'; alphA <= 'Z'; alphA++)
+	for (alphA = 'A'; alphA <= 'Z'; alphA++)
 	{
 		putchat(alphA);
 	}
