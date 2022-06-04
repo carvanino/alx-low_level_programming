@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (num3 = '2'; num3 <= '9'; num3++)
 			{
-				if (num1 != num2 != num3)
+				if ((num1 != num2) != num3)
 				{
 					putchar(num1);
 					putchar(num2);
