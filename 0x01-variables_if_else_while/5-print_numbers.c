@@ -11,6 +11,7 @@ int main(void)
 
 	decimal = 0;
 	for (decimal = 0; decimal < 10; decimal++)
-		printf("%d", decimal);"\n"
+		printf("%d", decimal);
+	printf("\n");
 	return (0);
 }
