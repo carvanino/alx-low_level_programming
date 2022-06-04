@@ -11,9 +11,7 @@ int main(void)
 
 	rev_alpha = 'a';
 	for (rev_alpha = 'a'; rev_alpha <= 'z'; rev_alpha--);
-	{
 		putchar(rev_alpha);
-	}
 	putchar('\n');
 	return (0);
 }
