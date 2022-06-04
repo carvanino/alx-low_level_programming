@@ -11,9 +11,10 @@ int main (void)
 
 	for (alph_a = 'a'; alph_a <= 'z'; alph_a++)
 		putchar(alph_a);
-	 while (alph_a == 'e')
+	 while (alph_a == 'e' && 'q')
 	 {
-		 putchar('\n');
+		 continue;
 	 }
+	 putchar('\n');
 	 return (0);
 }
