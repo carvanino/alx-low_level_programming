@@ -8,9 +8,9 @@
 int main(void)
 {
 	int decimal;
-	decimal = 0;
 
+	decimal = 0;
 	for (decimal = 0; decimal < 10; decimal++)
-		printf("%d\n", decimal);
+		printf("%d", decimal);
 	return (0);
 }
