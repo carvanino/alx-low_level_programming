@@ -13,8 +13,8 @@ int main(void)
 
 	if (decimal < 10)
 	{
-		putchar(decimal++);
+		printf("%d\n", decimal);
+		decimal++;
 	}
-	putchar('\n');
 	return (0);
 }
