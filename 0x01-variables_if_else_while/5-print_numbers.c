@@ -11,8 +11,11 @@ int main(void)
 	int decimal;
 	decimal = 0;
 
-	for (decimal = 0; decimal < 10; decimal++)
+	if (decimal < 10)
+	{
 		putchar(decimal);
+		decimal++;
+	}
 	putchar('\n');
 	return (0);
 }
