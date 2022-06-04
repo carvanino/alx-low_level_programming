@@ -10,7 +10,7 @@ int main(void)
 	char hex;
 
 	hex = '0';
-	for (hex = '0'; hex <= 'e'; hex++)
+	for (hex = '0'; hex <= '9'; hex++)
 		putchar(hex);
 	for (hex = 'a'; hex <= 'f'; hex++)
 		putchar(hex);
