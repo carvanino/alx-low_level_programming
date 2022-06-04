@@ -9,9 +9,9 @@
 int main(void)
 {
 	int decimal;
-	decimal = 0;
+	decimal = '0';
 
-	if (decimal < 10)
+	if (decimal < '10')
 	{
 		putchar(decimal);
 		decimal++;
