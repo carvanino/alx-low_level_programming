@@ -8,15 +8,13 @@
 int main(void)
 
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-
+	char c[8] = "_putchar";
+	int alpha = 0;
+	while (alpha < 7)
+	{
+		_putchar(c[alpha]);
+		alpha++;
+	}
+	putchar('\n);
 	return(0);
 }
