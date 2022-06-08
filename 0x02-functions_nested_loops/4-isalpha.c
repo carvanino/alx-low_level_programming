@@ -10,12 +10,18 @@
 
 int _isalpha(int c)
 {
-	if (c >= 0)
+	int a;
+	int b;
+
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		return (1);
+		for (b = 'A'; b <= 'Z'; b++)
+		{
+			if (a == c || b == c)
+			{
+				return (1);
+			}
+		}
 	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
