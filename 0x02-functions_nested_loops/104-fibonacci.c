@@ -32,6 +32,6 @@ int main(void)
 		}
 		amt++;
 	}
-	printf('\n');
+	putchar('\n');
 	return (0);
 }
