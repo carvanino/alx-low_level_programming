@@ -16,12 +16,12 @@ int _isalpha(int c)
 	low_alpha = 'a';
 	up_alpha = 'A';
 
-	while (low_alpha <= 'z' && up_alpha <= 'Z')
+	if (low_alpha <= 'z' && up_alpha <= 'Z')
 	{
 		if (c == low_alpha || c == up_alpha)
 		{
 			return (1);
 		}
-	}
 	return (0);
+	}
 }
