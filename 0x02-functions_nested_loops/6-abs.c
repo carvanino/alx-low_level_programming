@@ -4,20 +4,18 @@
  * _abs - computes the absolute value of an integer
  *
  * Return: Always 0 Success
- *
+ * @num: input to be computed
  */
 
 int _abs(int num)
 {
-	int a;
 
 	if (num < '0')
 	{
-		a = num * '-1';
-		_putchar(a);
+		return (num * -1);
 	}
 	else
 	{
-		_putchar(num);
+		return (num);
 	}
 }
