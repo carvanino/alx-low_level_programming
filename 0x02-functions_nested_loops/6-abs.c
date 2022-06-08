@@ -7,9 +7,8 @@
  *
  */
 
-int _abs(int)
+int _abs(int num)
 {
-	int num;
 	int a;
 
 	if (num < '0')
