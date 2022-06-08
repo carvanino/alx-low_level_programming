@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: Always 0 (success)
  *
@@ -13,11 +13,10 @@ int main(void)
 	long int sum;
 	long int n1;
 	long int n2;
-	
+
 	stop = 0;
 	n1 = 0;
 	n2 = 1;
-	
 	while (stop < 4000000)
 	{
 		stop = n1 + n2;
