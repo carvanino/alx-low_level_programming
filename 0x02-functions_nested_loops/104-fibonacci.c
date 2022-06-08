@@ -19,7 +19,7 @@ int main(void)
 	n2 = 1;
 	fibo = 0;
 
-	while (amt <= 98)
+	while (amt < 98)
 	{
 		fibo = n1 + n2;
 		n1 = n2;
@@ -32,6 +32,6 @@ int main(void)
 		}
 		amt++;
 	}
-	printf("\n");
+	printf('\n');
 	return (0);
 }
