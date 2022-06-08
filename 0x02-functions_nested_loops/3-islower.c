@@ -11,13 +11,15 @@ int _islower(int c)
 {
 	int lower;
 
-	lower = 'a';
-	while (lower <= 'z')
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		if (c == lower)
 		{
 			return (1);
 		}
-		return (0);
+		else
+		{
+			return (0);
+		}
 	}
 }
