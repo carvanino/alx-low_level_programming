@@ -27,6 +27,6 @@ int main(void)
 			sum = sum + stop;
 		}
 	}
-	printf("%i\n", sum);
+	printf("%li\n", sum);
 	return (0);
 }
