@@ -19,14 +19,14 @@ int main(void)
 	n2 = 1;
 	fibo = 0;
 
-	while (amt < 98)
+	while (a < 98)
 	{
 		fibo = n1 + n2;
 		n1 = n2;
 		n2 = fibo;
 		printf("%lu", fibo);
 
-		if (amt < 97)
+		if (a < 97)
 		{
 			printf(", ");
 		}
