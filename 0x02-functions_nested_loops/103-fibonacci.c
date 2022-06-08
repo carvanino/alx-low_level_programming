@@ -17,6 +17,7 @@ int main(void)
 	stop = 0;
 	n1 = 0;
 	n2 = 1;
+	sum = 0;
 	while (stop < 4000000)
 	{
 		stop = n1 + n2;
