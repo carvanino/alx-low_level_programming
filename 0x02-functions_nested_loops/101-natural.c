@@ -24,5 +24,6 @@ int main(void)
 		num++;
 	}
 	printf("%d", su_mul);
+	printf("\n");
 	return (0);
 }
