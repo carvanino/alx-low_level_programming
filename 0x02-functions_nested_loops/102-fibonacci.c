@@ -13,6 +13,10 @@ int main(void)
 	long int fibo;
 	long int n1;
 	long int n2;
+	
+	seq = 0;
+	n1 = 0;
+	n2 = 1;
 
 	while (seq < 50)
 	{
