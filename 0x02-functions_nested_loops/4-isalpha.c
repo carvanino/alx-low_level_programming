@@ -10,18 +10,12 @@
 
 int _isalpha(int c)
 {
-	int low_alpha;
-	int up_alpha;
-
-	low_alpha = 'a';
-	up_alpha = 'A';
-
-	if (low_alpha <= 'z' && up_alpha <= 'Z')
+	if (c > '0')
 	{
-		if (c == low_alpha || c == up_alpha)
-		{
-			return (1);
-		}
+		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
