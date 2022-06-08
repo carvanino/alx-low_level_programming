@@ -26,7 +26,7 @@ int main(void)
 		n2 = fibo;
 		printf("%lu", fibo);
 
-		if (amt < 97)
+		if (amt <= 97)
 		{
 			printf(", ");
 		}
