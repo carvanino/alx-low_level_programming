@@ -4,6 +4,8 @@
 /**
  * add - sums two integers
  *
+ * @a: first number to add
+ * @b: second number to add
  * Return: Always 0 (Success)
  *
  */
