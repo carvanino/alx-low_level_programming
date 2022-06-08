@@ -17,6 +17,7 @@ int main(void)
 	amt = 0;
 	n1 = 0;
 	n2 = 0;
+	fibo = 0;
 
 	while (amt < 98)
 	{
