@@ -19,7 +19,7 @@ int main(void)
 		fibo = n1 + n2;
 		n1 = n2;
 		n2 = fibo;
-		printf("%l", fibo);
+		printf("%lu", fibo);
 
 		if (seq < 49)
 		{
