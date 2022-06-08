@@ -1,36 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  *
  */
-
 int main(void)
 {
-	int amt;
-	unsigned long int fibo;
-	unsigned long int n1;
-	unsigned long int n2;
+	int i = 0;
+	unsigned long int a = 0, b = 1, next = 0;
 
-	amt = 0;
-	n1 = 0;
-	n2 = 1;
-	fibo = 0;
-
-	while (amt < 98)
+	while (i < 98)
 	{
-		fibo = n1 + n2;
-		n1 = n2;
-		n2 = fibo;
-		printf("%lu", fibo);
+		next = a + b;
+		a = b;
+		b = next;
+		printf("%lu", next);
 
-		if (amt < 97)
-		{
+		if (i < 97)
 			printf(", ");
-		}
-		amt++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
