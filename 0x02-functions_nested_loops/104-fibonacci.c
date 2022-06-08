@@ -10,9 +10,9 @@
 int main(void)
 {
 	int amt;
-	long int fibo;
-	long int n1;
-	long int n2;
+	unsigned long int fibo;
+	unsigned long int n1;
+	unsigned long int n2;
 
 	amt = 0;
 	n1 = 0;
@@ -24,7 +24,7 @@ int main(void)
 		fibo = n1 + n2;
 		n1 = n2;
 		n2 = fibo;
-		printf("%li", fibo);
+		printf("%lu", fibo);
 
 		if (amt < 97)
 		{
