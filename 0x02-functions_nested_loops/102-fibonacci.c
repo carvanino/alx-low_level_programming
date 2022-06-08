@@ -10,9 +10,9 @@
 int main(void)
 {
 	int seq;
-	int fibo;
-	int n1;
-	int n2;
+	long int fibo;
+	long int n1;
+	long int n2;
 
 	while (seq > 50)
 	{
