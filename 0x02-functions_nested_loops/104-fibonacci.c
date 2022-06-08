@@ -14,7 +14,7 @@ int main(void)
 	unsigned long int n1;
 	unsigned long int n2;
 
-	a = 0;
+	a = 1;
 	n1 = 0;
 	n2 = 1;
 	fibo = 0;
