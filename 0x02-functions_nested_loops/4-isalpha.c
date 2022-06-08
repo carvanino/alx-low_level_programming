@@ -10,7 +10,7 @@
 
 int _isalpha(int c)
 {
-	if (c > '0')
+	if (c > 0)
 	{
 		return (1);
 	}
