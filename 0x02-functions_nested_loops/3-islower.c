@@ -12,14 +12,16 @@ int _islower(int c)
 {
 	int lower;
 
-	lower = _islower(c);
-
-	if (lower > 0)
+	lower = 'a';
+	while (lower <= 'z')
 	{
-		return (1);
-	}
-	else
-	{
-		return (0);
+		if (c == lower)
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
 	}
 }
