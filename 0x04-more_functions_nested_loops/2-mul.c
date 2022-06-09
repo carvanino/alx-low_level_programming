@@ -3,7 +3,8 @@
 /**
  * mul - multiplies two integers
  *
- * @a,b: Characters to be multiplied
+ * @a: Characters to be multiplied
+ * @b: Character to be multiplied
  * 
  * Return:Always 0 (Success)
  */
