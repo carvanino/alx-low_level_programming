@@ -8,6 +8,7 @@
  *
  * Return: 1 (Success), 0 (Fail)
  */
+
 int _isdigit(int c)
 {
 	for (c = '0'; c <= '9'; c++)
