@@ -11,12 +11,14 @@
 int _isupper(int c)
 {
 	int i;
+	int f = 0;
 
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
 		{
-			return (1);
+			f = 1;
+			break;
 		}
 	return (0);
 	}
