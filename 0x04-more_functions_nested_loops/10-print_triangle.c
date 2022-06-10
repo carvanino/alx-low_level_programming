@@ -26,11 +26,13 @@ void print_triangle(int size)
 				{
 					_putchar('#');
 				}
-				n--;
-				_putchar('\n');
 			}
+			n--;
+			_putchar('\n');
 		}
-		else
-			_putchhar('\n');
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
