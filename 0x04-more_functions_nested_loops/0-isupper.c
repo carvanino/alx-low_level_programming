@@ -8,7 +8,7 @@
  * Return: 1 (Success) 0 (Failure)
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
 	int i;
 

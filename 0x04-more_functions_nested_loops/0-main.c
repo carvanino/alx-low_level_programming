@@ -3,23 +3,21 @@
 /**
  * _isupper - checks for uppercase character
  *
- * @c: character to be checked
+ * @c: Character to be checked
  *
- * Return: 1 (success), 0 (fail)
+ * Return: 1 (Success) 0 (Failure)
  */
 
-int _isupper(int c)
+int _isupper(int c);
 {
 	int i;
-	int f = 0;
 
 	for (i = 'A'; i <= 'Z'; i++)
 	{
-		if (c == i)
+		if (i == c)
 		{
-			f = 1;
-			break;
+			return (1);
 		}
-	return (0);
+		return (0);
 	}
 }
