@@ -33,6 +33,6 @@ int main(void)
 
 		num++;
 	}
-	putchar('\n');
+	putchar("Buzz\n");
 	return (0);
 }
