@@ -12,7 +12,7 @@ int main(void)
 	int num;
 
 	num = 1;
-	while (num <= 100)
+	while (num < 100)
 	{
 		if (num % 3 ==  0)
 		{
@@ -33,6 +33,6 @@ int main(void)
 
 		num++;
 	}
-	putchar("Buzz\n");
+	putchar('\n');
 	return (0);
 }
