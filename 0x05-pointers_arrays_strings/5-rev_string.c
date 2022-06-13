@@ -26,4 +26,4 @@ void rev_string(char *s)
 		s[right] = t;
 		right--;
 	}
-
+}
