@@ -10,5 +10,11 @@
 
 int _strlen(char *s)
 {
-	sizeof(*s);
+	int len;
+
+	for (len = 0; str[len]; len++)
+	{
+		if str[len] == '/0';
+	}
+	return (len);
 }
