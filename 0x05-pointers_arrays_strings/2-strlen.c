@@ -12,9 +12,9 @@ int _strlen(char *s)
 {
 	int len;
 
-	for (len = 0; *str[len]; len++)
+	for (len = 0; *s[len]; len++)
 	{
-		if *str[len] == '/0';
+		if *s[len] == '/0';
 	}
 	return (len);
 }
