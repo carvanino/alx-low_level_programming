@@ -15,11 +15,7 @@ void print_number(int n);
 	if (n < 0)
 	{
 		_putchar('-');
-		n_ = n_ * -1;
-	}
-	if (n_ == 0)
-	{
-		_putchar('0');
+		n_ = -n_;
 	}
 	if (n_ > 9)
 	{
