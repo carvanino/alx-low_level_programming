@@ -19,7 +19,7 @@ int is_prime_number(int n)
  * prime_number - checks n it satisfies prime number conditions
  *
  * @n: number to be checked
- * @i: 
+ * @i:
  *
  * Return: 1 if number satisfies and 0 if not
  */
@@ -28,7 +28,7 @@ int prime_number(int n, int i)
 {
 	if (n <= 1)
 	{
-		return(0);
+		return (0);
 	}
 	if (n % i == 0 && i > 1)
 	{
