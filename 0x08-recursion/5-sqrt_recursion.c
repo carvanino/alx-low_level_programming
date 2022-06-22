@@ -30,7 +30,7 @@ int _sqrt_recursion(int n)
 
 int numsqr(int n, int i)
 {
-	if (i > (n / 2))
+	if (i >= (n / 2))
 	{
 		return (-1);
 	}
