@@ -12,7 +12,7 @@ int _atoi(char *s)
 {
 	int a = 1;
 	int i;
-	int r;
+	int r = 0;
 
 	for (i = 0; !(s[i] >= 48 && s[i] <= 57); i++)
 	{
