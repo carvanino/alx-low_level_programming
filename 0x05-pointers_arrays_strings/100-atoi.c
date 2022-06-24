@@ -1,30 +1,53 @@
 #include "main.h"
 
 /**
- * _atoi - converts string to integer
+ * _atoi - converts a string to an integer
+ * @s: parameter name
  *
- * @s: string to be converted
- *
- * Return: 0 string doesnt contain number, 1 otherwise.
+ * Return: value of integer
  */
 
 int _atoi(char *s)
 {
-	int a = 1;
-	int FirstNum;
-	int r = 0;
+	int i, j, k, len, m, tmp;
 
-	for (FirstNum = 0; !(s[FirstNum] >= 48 && s[FirstNum] <= 57); FirstNum++)
+	int i = 0;
+	int j = 0;
+	int k = 0;
+	int len = 0;
+	int m = 0;
+	int tmp = 0;
+
+	while (s[len] != '\0')
 	{
-		if (s[FirstNum] == '-')
+		len++;
+	}
+	while (i < len && m == 0)
+	{
+		if (s[i] == '-')
 		{
-			a = a * -1;
+			++j;
 		}
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			tmp = s[i] - '0';
+			if (j % 2)
+			{
+				tmp = -tmp;
+			}
+			k = k * 10 + tmp;
+			m = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+			{
+				break;
+			}
+			m = 0;
+		}
+		i++;
 	}
-	for (int i = FirstNum; s[i] >= 48 && s[i] <= 57; i++)
+	if (m == 0)
 	{
-		r = r * 10;
-		r = r + (s[i] - 48);
+		return (0);
 	}
-	return (a * r);
+	return (k);
 }
