@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 	int a = 1;
-	int i;
+	int FirstNum;
 	int r = 0;
 
 	for (FirstNum = 0; !(s[FirstNum] >= 48 && s[FirstNum] <= 57); FirstNum++)
