@@ -21,7 +21,7 @@ int _atoi(char *s)
 			a = a * -1;
 		}
 	}
-	for (int i = FistNum; s[i] >= 48 && s[i] <= 57; i++)
+	for (int i = FirstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		r = r * 10;
 		r = r + (s[i] - 48);
