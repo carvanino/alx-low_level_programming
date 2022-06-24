@@ -1,1 +1,1 @@
-README
+C - Static libraries
