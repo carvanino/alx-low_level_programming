@@ -16,7 +16,7 @@ int _atoi(char *s)
 
 	for (FirstNum = 0; !(s[FirstNum] >= 48 && s[FirstNum] <= 57); FirstNum++)
 	{
-		if (s[i] == '-')
+		if (s[FirstNum] == '-')
 		{
 			a = a * -1;
 		}
