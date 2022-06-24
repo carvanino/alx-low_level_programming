@@ -14,14 +14,14 @@ int _atoi(char *s)
 	int i;
 	int r = 0;
 
-	for (i = 0; !(s[i] >= 48 && s[i] <= 57); i++)
+	for (FirstNum = 0; !(s[FirstNum] >= 48 && s[FirstNum] <= 57); FirstNum++)
 	{
 		if (s[i] == '-')
 		{
 			a = a * -1;
 		}
 	}
-	for (i = 0; s[i] >= 48 && s[i] <= 57; i++)
+	for (int i = FistNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		r = r * 10;
 		r = r + (s[i] - 48);
