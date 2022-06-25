@@ -23,7 +23,12 @@ int main(int argc __attribute__((unused)), char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (!(isdigit(*argv[i])))
+		if (*argv[i] < 0)
+		{
+			*argv[i] = ((*argv[i]) * -1);;
+			sum = sum + (atoi(argv[i]));
+		}
+		if ((!isdigit(*argv[i])))
 		{
 			printf("Error\n");
 			return (1);
