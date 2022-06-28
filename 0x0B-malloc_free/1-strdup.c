@@ -21,9 +21,9 @@ char *_strdup(char *str)
 	{
 	}
 	strcpy = (char *)malloc((len_str + 1) * (sizeof(char)));
-	if (str == 0)
+	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	if (strcpy == NULL)
 	{
@@ -33,6 +33,5 @@ char *_strdup(char *str)
 	{
 		strcpy[i] = str[i];
 	}
-	strcpy[len_str] = '\0';
 	return (strcpy);
 }
