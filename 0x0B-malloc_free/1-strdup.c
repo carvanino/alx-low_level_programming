@@ -17,19 +17,20 @@ char *_strdup(char *str)
 	int len_str;
 	char *strcpy;
 
-	for (len_str = 0; str[len_str]; len_str++)
-	{
-	}
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	for (len_str = 0; str[len_str]; len_str++)
+	{
+	}
+
 	strcpy = (char *)malloc((len_str + 1) * (sizeof(char)));
 	if (strcpy == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i]; i++)
+	for (i = 0; i < len_str; i++)
 	{
 		strcpy[i] = str[i];
 	}
