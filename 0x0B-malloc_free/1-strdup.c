@@ -20,8 +20,12 @@ char *_strdup(char *str)
 	for (len_str = 0; str[len_str]; len_str++)
 	{
 	}
-	strcpy = (char *)malloc((len_str + 1) * (sizeof (char)));
+	strcpy = (char *)malloc((len_str + 1) * (sizeof(char)));
 	if (str == 0)
+	{
+		return (0);
+	}
+	if (strcpy == 0)
 	{
 		return (0);
 	}
