@@ -33,5 +33,6 @@ char *_strdup(char *str)
 	{
 		strcpy[i] = str[i];
 	}
+	strcpy[len] = '\0';
 	return (strcpy);
 }
