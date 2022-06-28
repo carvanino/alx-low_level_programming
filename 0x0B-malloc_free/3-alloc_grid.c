@@ -33,7 +33,7 @@ int **alloc_grid(int width, int height)
 		{
 			array[i][j] = 0;
 		}
-		if (array[i] == NULL)
+		if (array == NULL)
 		{
 			while (i <= 0)
 			{
