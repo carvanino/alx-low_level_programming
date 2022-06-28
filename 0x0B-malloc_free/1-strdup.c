@@ -25,9 +25,9 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
-	if (strcpy == 0)
+	if (strcpy == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	for (i = 0; i < len_str; i++)
 	{
