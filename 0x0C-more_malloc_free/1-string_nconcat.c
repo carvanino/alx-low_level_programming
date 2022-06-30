@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len = len_s1 + n;
 	lens = len_s1 + len_s2;
-	if (n >= len_s2)
+	if (n <  len_s2)
 	{
 		catstr = malloc(sizeof(char) * (lens + 1));
 	}
