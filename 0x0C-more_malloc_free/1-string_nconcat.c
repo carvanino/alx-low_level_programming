@@ -38,18 +38,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		catstr = malloc(sizeof(char) * (len + 1));
 	}
 	if (catstr == NULL)
-	{
 		return (NULL);
-	}
 	for (i = 0; s1[i]; i++)
 	{
 		catstr[i] = s1[i];
 	}
-	for (i = 0; s2[i] && i < n; i++)
+	for (i = 0; n < len_s2 && i < len; i++)
 	{
 		catstr[len_s1 + i] = s2[i];
 	}
-	for (i = 0; n > len_s2 && i < lens; i++)
+	for (i = 0; n >= len_s2 && i < lens; i++)
 	{
 		catstr[len_s1 + i] = s2[i];
 	}
