@@ -32,18 +32,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= len_s2)
 	{
 		catstr = malloc(sizeof(char) * (lens + 1));
-		if (catstr == NULL)
-		{
-			return (NULL);
-		}
 	}
 	else
 	{
 		catstr = malloc(sizeof(char) * (len + 1));
-		if (catstr == NULL)
-		{
-			return (NULL);
-		}
+	}
+	if (catstr == NULL)
+	{
+		return (NULL);
 	}
 	for (i = 0; i < len_s1; i++)
 	{
