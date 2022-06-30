@@ -13,8 +13,6 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len = 0;
-      	unsigned int lens = 0;
        	unsigned int len_s1, len_s2, i;
 	char *catstr;
 
