@@ -31,11 +31,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	lens = len_s1 + len_s2;
 	if (n <  len_s2)
 	{
-		catstr = malloc(sizeof(char) * (lens + 1));
+		catstr = malloc(sizeof(char) * (len +  1));
 	}
 	else
 	{
-		catstr = malloc(sizeof(char) * (len + 1));
+		catstr = malloc(sizeof(char) * (lens + 1));
 	}
 	if (catstr == NULL)
 		return (NULL);
