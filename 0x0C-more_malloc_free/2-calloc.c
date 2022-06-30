@@ -16,11 +16,11 @@
 
 	if (nmemb == 0)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	if (size == 0)
 	{
-		return (NULL)
+		return (NULL);
 	}
 
 	array = malloc(size * nmemb);
