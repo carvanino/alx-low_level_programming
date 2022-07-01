@@ -45,10 +45,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		catstr[len_s1 + i] = s2[i];
 	}
-	catstr[i] = '\0';
 	for (i = 0; n >= len_s2 && i < (len_s1 + len_s2); i++)
 	{
 		catstr[len_s1 + i] = s2[i];
 	}
+	catstr[i] = '\0';
 	return (catstr);
 }
