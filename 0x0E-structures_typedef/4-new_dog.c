@@ -9,7 +9,7 @@
  * Return: pointer to copied argument
  */
 
-char *cpy(*char src)
+char *cpy(*char *src)
 {
 	char *ptr;
 	int i;
