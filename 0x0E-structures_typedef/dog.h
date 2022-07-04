@@ -9,7 +9,7 @@
  * @owner: structure member pointing to a char data type
  */
 
-type def struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
