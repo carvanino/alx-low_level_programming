@@ -1,10 +1,10 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the name of the file it was compiled from
  *
- * @Return: Nothing
+ * Return: Nothing
  */
 
 int main(void)
