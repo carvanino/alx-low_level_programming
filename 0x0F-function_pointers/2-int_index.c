@@ -9,7 +9,8 @@
  * @size: sise of array
  * @cmp: funtion pointer
  *
- * Return: -1 if no element matches; -1 if size <= 0; i
+ * Return: -1 if no element matches;
+ * -1 if size <= 0; i
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -22,7 +23,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	}
 	for (i = 0; i < size; i++)
 	{
-		if (cmp(array[i]));
+		if (cmp(array[i]))
 		{
 			return (-1);
 		}
