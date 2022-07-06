@@ -6,7 +6,7 @@
  * main - prints users operations
  *
  * @argc: number of command line argument
- * @argv; array containing the program command line argument
+ * @argv: array containing the program command line argument
  *
  * Return: 0
  */
