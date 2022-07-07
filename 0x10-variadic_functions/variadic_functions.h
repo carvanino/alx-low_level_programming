@@ -7,7 +7,7 @@ typedef struct form_types
 {
 	char *identifier;
 	void (*type)(va_list *);
-}f_types;
+} f_types;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
