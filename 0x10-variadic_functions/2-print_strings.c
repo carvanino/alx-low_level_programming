@@ -6,7 +6,7 @@
  * print_strings - prints string
  *
  * @separator: string to be printed between strings
- * n: number of strings to be printed
+ * @n: number of strings to be printed
  *
  * Return: Strings
  */
