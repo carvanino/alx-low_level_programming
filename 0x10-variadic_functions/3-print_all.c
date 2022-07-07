@@ -51,7 +51,7 @@ void print_float(va_list *ap)
 	printf("%f", f);
 }
 /**
- * print_char - prints a string
+ * print_string - prints a string
  *
  * @ap: pointer to argument parameter
  *
