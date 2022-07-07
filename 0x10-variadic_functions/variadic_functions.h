@@ -3,6 +3,14 @@
 
 #include <stdarg.h>
 
+/**
+ * struct form_types - contains identifier and pointer to function
+ *
+ * @identifier: format type, int(i), char(c), float(f), string(s)
+ * @type: pointer to function that takes an unknown number of variable list
+ *
+ */
+
 typedef struct form_types
 {
 	char *identifier;
