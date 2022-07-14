@@ -1,0 +1,26 @@
+#include "lists.h"
+
+/**
+ * print_list - print all the element of a single-linked list list_t
+ *
+ * @h: pointer to the start of the list
+ *
+ * Return: Number of nodes
+ */
+
+size_t print_list(const list_t *h)
+{
+	size_t count = 0; 
+	if (h->str == NULL)
+	{
+		printf("[0] (nil)\n");
+	}
+
+	while (h != NULL)
+	{
+		printf("[%d] %s\n", h->len, h->str);
+		count++;
+		h = h->next;
+	}
+	return (count);
+}
