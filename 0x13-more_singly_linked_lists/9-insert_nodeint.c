@@ -34,15 +34,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (newnode);
 	}
 	trans_v = *head;
-	if (trans_v == NULL)
-	{
-		free(newnode);
-		return (NULL);
-	}
 	while (i < idx)
 	{
 		trans_v = trans_v->next;
 		i++;
+		if (idx == 0)
+		{
+			newnode->next = *head;
+			(*head) = newnode;
+			return (newnode);
+		}
 	}
 	newnode->next = trans_v->next;
 	trans_v->next = newnode;
