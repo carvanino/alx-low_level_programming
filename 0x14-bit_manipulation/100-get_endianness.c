@@ -7,7 +7,7 @@
  *
  */
 
-int get_endianness(void);
+int get_endianness(void)
 {
 	unsigned int x;
 	char *c;

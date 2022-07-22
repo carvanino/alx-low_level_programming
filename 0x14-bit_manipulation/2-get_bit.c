@@ -10,7 +10,7 @@
  * otherwise: -1 on error
  */
 
-nt get_bit(unsigned long int n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
 
