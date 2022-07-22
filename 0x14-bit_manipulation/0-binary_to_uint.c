@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int i;
 	int len, b_2;
 
-	if (!b_2)
+	if (!b)
 	{
 		return (0);
 	}
