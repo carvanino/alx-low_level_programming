@@ -54,7 +54,7 @@ void cp_file(const char *src, const char *dest)
 
 	if (r == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 	if (close(fd1) == -1)
