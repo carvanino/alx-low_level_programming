@@ -1,9 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-#define MAXSIZE 1024
-#define SE STDERR_FILENO
-
 /**
  * main - Entry
  *
@@ -17,7 +14,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 3)
 	{
-		dprintf(SE, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -35,8 +32,8 @@ int main(int argc, char **argv)
 
 void cp_file(const char *src, const char *dest)
 {
-	int fd1, fd2, r, w;
-	char content[MAXSIZE];
+	int fd1, fd2, r;
+	char content[1024];
 
 	fd1 = open(src, O_RDONLY);
 	if (!src || fd1 == -1)
@@ -45,17 +42,14 @@ void cp_file(const char *src, const char *dest)
 		exit(98);
 	}
 
-	fd2 = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	r = read(fd1, content, MAXSIZE);
-	w = write(fd2, content, r);
-	while (r > 0)
+	fd2 = open(dest, O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	while ((r = read(fd1, content, 1024)) > 0)
 	{
-		if (w != r || fd2 == -1)
+		if (write(fd2, content, r) != r || fd2 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
 		}
-		break;
 	}
 
 	if (r == -1)
