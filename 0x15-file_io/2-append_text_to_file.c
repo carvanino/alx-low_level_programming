@@ -4,7 +4,7 @@
  * append_text_to_file - creates a file
  *
  * @filename: pointer to the pathname
- * @text_content - pointer to the content of the file created
+ * @text_content: pointer to the content of the file created
  * Return: 1 on Success and -1 on fail
  */
 
