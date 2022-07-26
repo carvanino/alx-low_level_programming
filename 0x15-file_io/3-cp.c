@@ -3,6 +3,7 @@
 
 #define MAXSIZE 1024
 #define SE STDERR_FILENO
+
 /**
  * main - Entry
  *
@@ -40,7 +41,7 @@ void cp_file(const char *src, const char *dest)
 	fd1 = open(src, O_RDONLY);
 	if (!src || fd1 == -1)
 	{
-		dprintf(SE, "Error: Can't read from file %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 
@@ -51,7 +52,7 @@ void cp_file(const char *src, const char *dest)
 	{
 		if (w != r || fd2 == -1)
 		{
-			dprintf(SE, "Error: Can't write to %s\n", dest);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
 		}
 		break;
@@ -59,17 +60,17 @@ void cp_file(const char *src, const char *dest)
 
 	if (r == -1)
 	{
-		dprintf(SE, "Error: Can't read from %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", src);
 		exit(98);
 	}
 	if (close(fd1) == -1)
 	{
-		dprintf(SE, "Error: Can't close fd %d\n", fd1);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
 		exit(100);
 	}
 	if (close(fd2) == -1)
 	{
-		dprintf(SE, "Error: Can't close fd %d\n", fd2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
 }
