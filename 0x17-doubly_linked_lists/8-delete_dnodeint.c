@@ -57,15 +57,15 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index == nodes)
 	{
 		while (i < index - 1)
-		{
 			transv = transv->next;
 			i++;
-		}
 		transv->prev->next = NULL;
 		transv = transv->prev;
 		free(transv);
 		return (1);
 	}
+	if (index > nodes)
+		return (-1);
 	transv = *head;
 	while (i < index)
 	{
