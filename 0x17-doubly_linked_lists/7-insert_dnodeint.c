@@ -1,6 +1,30 @@
 #include "lists.h"
 
 /**
+ * dlistint_len - returns the number of element in a doubly linked list
+ *
+ * @h: pointer to the beginning of the list
+ *
+ * Return: Number of element in list
+ */
+
+size_t dlistint_len(const dlistint_t *h)
+{
+	size_t no_nodes = 0;
+
+	if (h == NULL)
+	{
+		return (0);
+	}
+	while (h != NULL)
+	{
+		no_nodes++;
+		h = h->next;
+	}
+	return (no_nodes);
+}
+
+/**
  * insert_dnodeint_at_index - inserts a new node at a specified position
  *
  * @h: pointer to the beginning of the list
@@ -17,6 +41,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i = 0;
 	dlistint_t *transv = *h;
 	dlistint_t *newnode;
+	size_t nodes;
 
 	if (h == NULL)
 		return (NULL);
@@ -29,27 +54,17 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (add_dnodeint(h, n));
 	}
+	nodes = dlistint_len(*h);
+	if (idx > nodes)
+		return (NULL);
 
-	while (i < idx - 1 && transv != NULL)
+	while (i < idx - 1  && transv != NULL)
 	{
 		transv = transv->next;
 		i++;
 	}
-	/*
-	if (idx > i)
-	{
-		return (NULL);
-	}
-	*
-	*/
-	printf("%d\n", i);
 	if (transv->next == NULL)
 	{
-		/*return (add_dnodeint_end(h, n));*/
-		if (idx > i + 1)
-		{
-			return (NULL);
-		}
 		return (add_dnodeint_end(h, n));
 	}
 	else
