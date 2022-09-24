@@ -21,23 +21,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	value_cpy = strdup(value);
 	key_cpy = strdup(key);
 	if (value_cpy == NULL || key_cpy == NULL)
-	{
 		return (0);
-	}
 
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
-	{
 		return (0);
-	}
 	new_node->key = key_cpy;
 	new_node->value = value_cpy;
 
-	/* First, we check through the array if a key already exist,
-	 * and we update its value, intead of making a duplicate */
+	/*
+	 * First, we check through the array if a key already exist,
+	 * and we update its value, intead of making a duplicate
+	 */
 	for (i = 0; ht->array[i]; i++)
 	{
-		if(strcmp(ht->array[i]->key, key_cpy) == 0)
+		if (strcmp(ht->array[i]->key, key_cpy) == 0)
 		{
 			free(ht->array[i]->value);
 			ht->array[i]->value = value_cpy;
