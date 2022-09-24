@@ -17,6 +17,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new_node;
 	char *value_cpy, *key_cpy;
 
+	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
+		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
 	value_cpy = strdup(value);
 	key_cpy = strdup(key);
@@ -31,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	/*
 	 * First, we check through the array if a key already exist,
-	 * and we update its value, intead of making a duplicate
+	 * and we update its value, instead of making a duplicate
 	 */
 	for (i = 0; ht->array[i]; i++)
 	{
@@ -48,9 +50,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		new_node->next = ht->array[index];
 	}
 	else
-	{
 		new_node->next = NULL;
-	}
 	ht->array[index] = new_node;
 	return (1);
 }
