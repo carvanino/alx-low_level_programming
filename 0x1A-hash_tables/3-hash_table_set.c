@@ -52,6 +52,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (value_cpy == NULL || key_cpy == NULL)
 		return (0);
 
+	/*
+	 * We check the current array index, if the key we intened to add
+	 * is alrready present, instead we update the value
+	 */
 	if (check_key(ht->array[index], key_cpy, value_cpy) == 1)
 	{
 		return (1);
@@ -63,6 +67,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->key = key_cpy;
 	new_node->value = value_cpy;
 
+	/* If theres is collision; Array index has already been used */
 	if (ht->array[index] != NULL)
 	{
 		new_node->next = ht->array[index];
