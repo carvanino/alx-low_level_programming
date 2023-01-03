@@ -22,7 +22,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 
 	jump = sqrt(size);
 	transv = list;
-	while (transv->n < value && transv->next != NULL)
+	while (transv->n <= value && transv->next != NULL)
 	{
 		temp = transv;
 		count += jump;
