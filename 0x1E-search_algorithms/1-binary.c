@@ -21,14 +21,9 @@ int binary_search(int *array, size_t size, int value)
 	mid = size / 2;
 
 	if (!array)
-	{
 		return (-1);
-	}
-
 	if (array[mid] == value)
-	{
 		return (mid);
-	}
 	while (array[mid] != value)
 	{
 		if (start <= end)
