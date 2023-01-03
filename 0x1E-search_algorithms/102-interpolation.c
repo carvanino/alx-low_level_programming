@@ -18,6 +18,12 @@ int interpolation_search(int *array, size_t size, int value)
 	int start = 0;
 	int end = size - 1;
 
+
+
+	if (!array)
+	{
+		return (-1);
+	}
 	while (value >= array[start] /*&& value <= array[end]*/ && start <= end)
 	{
 		/**
@@ -37,7 +43,6 @@ int interpolation_search(int *array, size_t size, int value)
 		{
 			return (guess);
 		}
-
 		if (array[guess] > value)
 		{
 			end = guess - 1;
