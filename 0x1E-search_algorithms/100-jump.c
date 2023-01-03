@@ -46,6 +46,14 @@ int jump_search(int *array, size_t size, int value)
 	return (-1);
 }
 
+/**
+ * square_root - finds the square root of a number
+ *
+ * @number: Number to determine the square root
+ *
+ * Return: The square root of number
+ */
+
 
 int square_root(int number)
 {
