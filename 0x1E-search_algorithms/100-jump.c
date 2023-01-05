@@ -27,34 +27,21 @@ int jump_search(int *array, size_t size, int value)
 	for (i = 0; i < size && array[i] < value; i += jump)
 	{
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		/*if (array[i] == value)
-		{
-			return (i);
-		}*/
 	}
-	/*printf("%d\n", array[i]);*/
 	temp = i;
 	if (i <= 0)
 		temp = i + jump;
 	else
 		i = i - jump;
-	
 	printf("Value found between indexes [%ld] and [%ld]\n", i, temp);
-	/*if (abs(array[i]) >= value && i > 0)*/
-	/*{*/
-	/*temp = i;
-	i = i - jump;*/
-	/*printf("value of temp is %d\n", temp);*/
-	for (i = i; i <= temp && array[i] <= value; i++)
+	for (i = i; i < temp && array[i] <= value; i++)
 	{
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		
 		if (array[i] == value)
 		{
 			return (i);
 		}
 	}
-	/*}*/
 	return (-1);
 }
 
@@ -65,19 +52,3 @@ int jump_search(int *array, size_t size, int value)
  *
  * Return: The square root of number
  */
-
-/*
-int square_root(int number)
-{
-	int range = number / 4;
-	int i = 0;
-
-	for (i = 0; i <= range; i++)
-	{
-		if (i * i == number)
-		{
-			return (i);
-		}
-	}
-	return (i);
-}*/
