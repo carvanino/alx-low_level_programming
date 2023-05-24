@@ -5,6 +5,9 @@ Island Perimeter
 
 
 def island_perimeter(grid):
+    """
+    Checks if a grid has an island
+    """
     perimeter = 0
     rows = len(grid)
     cols = len(grid[0])
